@@ -5,7 +5,7 @@ var projectRoot = path.resolve(__dirname, '../')
 
 module.exports = {
   entry: {
-    app: './src/main.js'
+    app: './example/main.js'
   },
   output: {
     path: config.build.assetsRoot,
@@ -17,10 +17,10 @@ module.exports = {
     fallback: [path.join(__dirname, '../node_modules')],
     alias: {
       // 外部依赖可以 通过一些配置 提升性能
-      'moment': 'moment/min/moment.min.js',
+      // 'moment': 'moment/min/moment.min.js',
 
       'src': path.resolve(__dirname, '../src'),
-      'assets': path.resolve(__dirname, '../src/assets'),
+      'assets': path.resolve(__dirname, '../example/assets'),
       'components': path.resolve(__dirname, '../src/components')
     }
   },
