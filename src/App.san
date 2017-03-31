@@ -1,0 +1,26 @@
+<template>
+<h1>hello san!</h1>
+</template>
+
+<script>
+
+
+import { Link } from 'san-router'
+
+
+export default {
+    components: {
+        'router-link': Link
+    },
+
+    route: function () {
+        var route = this.data.get('route');
+    },
+
+}
+</script>
+
+<style>
+
+
+</style>
