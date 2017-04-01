@@ -1,14 +1,14 @@
-import san from 'san'
+import san from 'san';
 
 // style
-require('./main.css')
+// require('./main.css')
 
 // route
-import App from './App'
+import App from './App';
 
-import {router} from 'san-router'
+import {router} from 'san-router';
 
-router.add({rule: '/', Component: App, target: '#app'});
+router.add({rule: '/', Component: App, target: '#container'});
 
 // start
-router.start()
+router.start();
