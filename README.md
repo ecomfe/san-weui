@@ -1,35 +1,19 @@
-todos-esnext
-===
+#San-WeUI 
 
-> todos demo use `.san` components and `esnext`
+[WeUI](https://github.com/weui/weui) Components build with [San](https://ecomfe.github.io/san/).
 
-## Prepare
+## Docs
 
-```
-$ npm i
-```
+暂无
 
-## Dev
+## Example
 
-First, run dev script:
+暂无~
 
-```
-$ npm run dev
-```
+## Mobile Demo
 
-And then, open <http://localhost:8888/> 
+暂无~
 
-## Build
+## License
 
-```
-$ npm run build
-```
-
-Start static server at `dist`
-
-```
-$ type serve >/dev/null 2>&1 || npm i -g serve
-$ serve dist -p 9999
-```
-
-Open <http://localhost:9999/> 
+The MIT License([http://opensource.org/licenses/MIT](http://opensource.org/licenses/MIT))
