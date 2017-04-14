@@ -4,7 +4,7 @@
         <h1 class="page__title">{{title}}</h1>
         <p class="page__desc">{{subTitle}}</p>
     </div>
-    <div class="page__bd ">
+    <div class="page__bd page__bd_spacing">
         <slot ></slot>
     </div>
     <div class="page__ft">
