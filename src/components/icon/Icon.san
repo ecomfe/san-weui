@@ -1,0 +1,25 @@
+<template>
+<i class="{{cls}}"></i>
+</template>
+
+<script>
+import classNames from 'classnames';
+
+export default {
+    computed: {
+        cls : function () {
+            let value = this.data.get('value');
+            let size = this.data.get('size');
+            let primary = this.data.get('primary');
+            const cls = classNames({
+                ['weui-icon-' + value]: value !== 'loading',
+                'weui-icon_msg': size === 'large' && !primary,
+                'weui-icon_msg-primary': size === 'large' && primary,
+                'weui-loading': value === 'loading'
+            });
+            console.log(cls);
+            return cls;
+        }
+    }
+};
+</script>

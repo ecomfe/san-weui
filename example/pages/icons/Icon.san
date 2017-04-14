@@ -1,0 +1,99 @@
+<template>
+<div>
+    <Page class="icons" title="Icons" subTitle="图标"spacing>
+        <sw-icon-box
+            title="Well done!"
+            desc="You successfully read this important alert message."
+        >
+            <sw-icon size="large" value="success" />
+        </sw-icon-box>
+
+        <sw-icon-box
+            title="Heads up!"
+            desc="This alert needs your attention, but it's not super important."
+        >
+            <sw-icon size="large" value="info" />
+        </sw-icon-box>
+
+        <sw-icon-box
+            title="Attention!"
+            desc="This is your default warning with the primary property"
+        >
+            <sw-icon size="large" value="warn" primary/>
+        </sw-icon-box>
+
+        <sw-icon-box
+            title="Attention!"
+            desc="This is your strong warning without the primary property"
+        >
+            <sw-icon size="large" value="warn"/>
+        </sw-icon-box>
+
+        <sw-icon-box
+            title="Hold on!"
+            desc="We are working hard to bring the best ui experience"
+        >
+            <sw-icon size="large" value="waiting"/>
+        </sw-icon-box>
+
+        <sw-icon size="large" value="safe-success" />
+        <sw-icon size="large" value="safe-warn" />
+
+        <div class="icon_sp_area">
+            <sw-icon value="success" />
+            <sw-icon value="success-circle" />
+            <sw-icon value="success-no-circle" />
+            <sw-icon value="info" />
+            <sw-icon value="waiting" />
+            <sw-icon value="waiting-circle" />
+            <sw-icon value="circle" />
+            <sw-icon value="warn" />
+            <sw-icon value="download" />
+            <sw-icon value="info-circle" />
+            <sw-icon value="cancel" />
+            <sw-icon value="clear" />
+            <sw-icon value="search" />
+        </div>
+    </Page>
+</div>
+</template>
+
+<script>
+
+import Page from '../../Page';
+import { Link } from 'san-router';
+import IconBox from './IconBox';
+import { Icon } from '../../../src/index';
+
+
+export default {
+
+    components: {
+        'router-link': Link,
+        'page': Page,
+        'sw-icon' : Icon,
+        'sw-icon-box' : IconBox
+
+    },
+
+    // route: function () {
+    //     var route = this.data.get('route');
+    // },
+
+}
+
+</script>
+
+<style>
+
+.page .icons{
+    text-align: center;
+}
+
+.icon_sp_area {
+    margin-top: 20px;
+}
+.page .icons i {
+    padding: 0 5px 10px;
+}
+</style>

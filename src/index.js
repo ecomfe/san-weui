@@ -5,6 +5,7 @@
  */
 
 import Article from './components/article';
+import Icon from './components/icon';
 import { Flex, FlexItem } from './components/flex';
 
 const Version  = '0.0.1';
@@ -14,5 +15,6 @@ export {
     Version,
     Article,
     Flex,
-    FlexItem
+    FlexItem,
+    Icon
 };

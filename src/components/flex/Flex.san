@@ -1,5 +1,5 @@
 <template>
-<div class="weui-flex {{class}}">
+<div class="weui-flex">
     <slot></slot>
 </div>
 </template>
