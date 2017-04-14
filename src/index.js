@@ -4,8 +4,12 @@
  * @date:   2017-03-31 20:58:26
  */
 
-const version  = '0.0.1';
+import Article from './components/article/Article';
 
-export default {
-    version
+const Version  = '0.0.1';
+// console.log(Article);
+
+export {
+    Version,
+    Article
 };

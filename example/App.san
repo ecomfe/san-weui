@@ -1,18 +1,23 @@
 <template>
-<h1>hello san!</h1>
+<section>
+    <page class="wx-page" title="San-WeUI" subTitle="WeUI Components build with San">
+        <ul>
+            <li><router-link to='/article'> article </router-link></li>
+        </ul>
+    </page>
+</section>
 </template>
 
 <script>
 
-
 import { Link } from 'san-router'
-
 import Sanx from '../src/index'
-
+import Page from './Page';
 
 export default {
     components: {
-        'router-link': Link
+        'router-link': Link,
+        'page': Page
     },
 
     route: function () {
@@ -24,6 +29,5 @@ export default {
 </script>
 
 <style>
-
 
 </style>
