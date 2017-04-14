@@ -1,0 +1,9 @@
+<template>
+<div class="weui-flex__item {{class}}">
+    <slot></slot>
+</div>
+</template>
+
+<script>
+    export default {};
+</script>
