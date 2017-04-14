@@ -54,6 +54,11 @@
             <sw-icon value="clear" />
             <sw-icon value="search" />
         </div>
+        <div slot="footer">
+            <router-link to="/">
+                <div class="back-btn">返回</div>
+            </router-link>
+        </div>
     </Page>
 </div>
 </template>

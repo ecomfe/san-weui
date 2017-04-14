@@ -19,7 +19,7 @@
                 </section>
             </section>
         </sw-article>
-        <div slot="footer"><router-link to="/">返回</router-link></div>
+        <div slot="footer"><router-link to="/"><div class="back-btn">返回</div></router-link></div>
     </page>
 </div>
 </template>

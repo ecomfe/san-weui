@@ -1,5 +1,5 @@
 <template>
-<i class="{{cls}}"></i>
+<i class="{{cls}}" />
 </template>
 
 <script>
@@ -8,7 +8,7 @@ import classNames from 'classnames';
 export default {
     computed: {
         cls : function () {
-            let value = this.data.get('value');
+            let value = this.data.get('value') || 'success';
             let size = this.data.get('size');
             let primary = this.data.get('primary');
             const cls = classNames({
@@ -17,7 +17,6 @@ export default {
                 'weui-icon_msg-primary': size === 'large' && primary,
                 'weui-loading': value === 'loading'
             });
-            console.log(cls);
             return cls;
         }
     }
