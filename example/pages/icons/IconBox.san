@@ -1,9 +1,0 @@
-<template>
-    <div class="icon-box">
-        <slot></slot>
-        <div class="icon-box__ctn">
-            <h3 class="icon-box__title">{{title}}</h3>
-            <p class="icon-box__desc">{{desc}}</p>
-        </div>
-    </div>
-</template>
