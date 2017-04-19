@@ -1,0 +1,45 @@
+<template>
+<div>
+     <page class="grid" title="Grid" subTitle="九宫格">
+        <grids data="{{data}}"/>
+        <div slot="footer">
+            <router-link to="/">
+                <div class="back-btn">返回</div>
+            </router-link>
+        </div>
+    </page>
+
+</div>
+</template>
+<script>
+import Page from '../../Page';
+import { Link } from 'san-router';
+import { Grids } from '../../../src/index';
+import { Icon } from '../../../src/index';
+
+
+export default {
+    initData() {
+        return {
+            data: Array(9).fill({
+                icon: '<img src="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo_top_ca79a146.png">',
+                label: 'Grid Grid Grid',
+                href: 'http://baidu.com'
+            })
+        };
+    },
+
+    components: {
+        'router-link': Link,
+        'page': Page,
+        'grids' : Grids
+
+    },
+
+    // route: function () {
+    //     var route = this.data.get('route');
+    // },
+
+}
+
+</script>

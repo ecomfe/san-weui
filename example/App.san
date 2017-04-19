@@ -5,6 +5,7 @@
             <li><router-link to='/article'> article </router-link></li>
             <li><router-link to='/flex'> flex </router-link></li>
             <li><router-link to='/icons'> Icons </router-link></li>
+            <li><router-link to='/grid'> Grid </router-link></li>
         </ul>
     </page>
 </section>

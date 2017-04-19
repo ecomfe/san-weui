@@ -1,0 +1,17 @@
+<template>
+    <div class="weui-grids">
+        <grid san-for="item in data" icon="{{item.icon}}" label="{{item.label}}" href="{{item.href}}">
+        </grid>
+    </div>
+</template>
+
+<script>
+import Grid from './Grid';
+export default {
+
+    components: {
+        'grid': Grid
+    }
+};
+
+</script>

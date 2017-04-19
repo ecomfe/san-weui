@@ -6,7 +6,9 @@
 
 import Article from './components/article';
 import Icon from './components/icon';
-import { Flex, FlexItem } from './components/flex';
+import { Flex, FlexItem } from './components/flex'
+import { Grids, Grid, GridLabel, GridIcon } from './components/grid';
+
 
 const Version  = '0.0.1';
 // console.log(Article);
@@ -16,5 +18,6 @@ export {
     Article,
     Flex,
     FlexItem,
-    Icon
+    Icon,
+    Grids, Grid, GridLabel, GridIcon
 };

@@ -1,0 +1,20 @@
+<template>
+<a class="weui-grid" href="{{href}}">
+    <grid-icon san-if="icon" >{{icon|raw}}</grid-icon>
+    <slot></slot>
+    <grid-label san-if="label" style="{{icon ? 'margin-top:5px;' : ''}}">{{label}}</grid-label>
+</a>
+</template>
+
+<script>
+import GridIcon from './GridIcon';
+import GridLabel from './GridLabel';
+
+export default {
+    components: {
+        'grid-icon': GridIcon,
+        'grid-label': GridLabel
+    }
+};
+
+</script>
